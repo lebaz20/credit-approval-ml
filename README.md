@@ -53,12 +53,13 @@ The missing values from particular attributes are:
 We are going to use a mix of supervised and unsupervised learning models and figure out their impact on accuracy.
 
 
-## 4. Steps expected are as follows:
+## 4. The steps expected are as follows:
 
     1. Load data and getting familiar with available data types.
     2. Handle missing data.
-    3. Normalize data.
-    4. Identify the right model to study data.
+    3. Split data.
+    4. Normalize data.
+    5. Identify the right model to study data.
 
 ### Missing data handling:
 
@@ -116,3 +117,21 @@ We are going to use a mix of supervised and unsupervised learning models and fig
   * No need to handle missing values in each column as ML algorithms will handle it efficiently.
 * Cons:
   * No implementation of these ML algorithms in the scikit-learn library.
+
+### Data splitting:
+
+#### So in theory, we need to: 
+1. Split our data into k different subsets (or folds).
+2. Use k-1 subsets to train our data and leave the last subset (or the last fold) as test data.
+3. Average the model against each of the folds.
+4. Finalize our model.
+5. Test it against the test set.
+
+![cross-validation](docs/cross_validation.png)
+
+#### Impact of increasing the number of folds:
+* Pros:
+  * Reduce error due to bias.
+* Cons:
+  * Increase error due to variance.
+  * Increase computational cost.
