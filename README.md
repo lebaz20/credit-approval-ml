@@ -4,7 +4,7 @@ Machine Learning using [Credit Approval Data Set](https://archive.ics.uci.edu/ml
 This file concerns credit card applications. All attribute names and values have been changed to meaningless symbols to protect the confidentiality of the data.
 This will still suit our purposes as a demonstration dataset since we are not using the data to develop actual credit screening criteria. 
 
-This dataset is interesting because there is a good mix of attributes -- continuous, nominal with small numbers of values, and nominal with larger numbers of values. There are also a few missing values.
+This dataset is interesting because there is a good mix of attributes -- continuous, ordinal, nominal with small numbers of values, and nominal with larger numbers of values. There are also a few missing values.
 
 ## 1.  Attribute Information:
 
@@ -50,16 +50,19 @@ The missing values from particular attributes are:
      -: 383 (55.5%)
 ````
 
-We are going to use a mix of supervised and unsupervised learning models and figure out their impact on accuracy.
+We are going to use supervised learning models, Baseline logistic regression and GridSearchCV logistic regression and and figure out their impacts on accuracy.
 
 
 ## 4. The steps expected are as follows:
 
-    1. Load data and getting familiar with available data types.
-    2. Handle missing data.
-    3. Normalize data.
-    4. Split data.
-    5. Model data.
+    1. Load data and inspect the structure and the data types of the data set.
+    2- Clean the data.
+    3. Handle missing data.
+    4. Preprocess the data.
+    5. Basic data visulaization.
+    6. Feature Scaling.
+    7. Split data.
+    8. Model data.
 
 ### Missing data handling:
 
