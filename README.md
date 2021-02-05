@@ -88,6 +88,7 @@ We are going to use a mix of supervised and unsupervised learning models and fig
   * Does not factor the covariance between features (for continuous ones).
 
 #### 3. Fill based on predictive models between mostly correlated columns.
+Using linear regression for continuous data and association rules by Apriori for categorical data.
 
 * Pros:
   * Gives a better result than earlier methods.
@@ -96,6 +97,7 @@ We are going to use a mix of supervised and unsupervised learning models and fig
   * Considered only as a proxy for the true values.
 
 #### 4. Fill using unsupervised learning.
+Using k-nearest neighbors imputer.
 
 * Pros:
   * Support more non-linearity between data, as it doesn't need a strong correlation  
@@ -104,8 +106,10 @@ We are going to use a mix of supervised and unsupervised learning models and fig
   * Considered only as a proxy for the true values.
 
 #### 5. Fill using deep learning.
+Using Datawig which is a library that learns ML models using Deep Neural Networks to impute missing values in the datagram.
 
 * Pros:
+  * Works very well with categorical, continuous, and non-numerical features.
   * Quite accurate compared to other methods.
   * It supports both CPUs and GPUs.
 * Cons:
