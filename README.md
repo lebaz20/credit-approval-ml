@@ -57,9 +57,9 @@ We are going to use a mix of supervised and unsupervised learning models and fig
 
     1. Load data and getting familiar with available data types.
     2. Handle missing data.
-    3. Split data.
-    4. Normalize data.
-    5. Identify the right model to study data.
+    3. Normalize data.
+    4. Split data.
+    5. Model data.
 
 ### Missing data handling:
 
@@ -117,6 +117,37 @@ We are going to use a mix of supervised and unsupervised learning models and fig
   * No need to handle missing values in each column as ML algorithms will handle it efficiently.
 * Cons:
   * No implementation of these ML algorithms in the scikit-learn library.
+
+### Data normalization:
+
+#### Normalization
+It is the process of rescaling the values between [0, 1].
+Image for post
+
+![normalization](docs/normalization.png)
+
+#### Why normalization?
+* Normalization makes training less sensitive to the scale of features, so we can better solve for coefficients. Outliers are gone, but still remain visible within the normalized data.
+* The use of a normalization method will improve analysis for some models.
+* Normalizing will ensure that a convergence problem does not have a massive variance, making optimization feasible.
+
+#### Standardization
+It is the process of rescaling the features so that they’ll have the properties of a Gaussian distribution with a mean of 0 and a standard deviation of 1.
+
+![standardization](docs/standardization.png)
+
+#### Why standardization?
+* Compare features that have different units or scales.
+* Standardizing tends to make the training process well behaved because the numerical condition of the optimization problems is improved.
+
+#### Differences?
+* When using standardization, your new data aren’t bounded (unlike normalization).
+* Use normalization when you don’t know the distribution of your data or you know it is not Gaussian.
+* Use standardization if your data has a Gaussian distribution.
+Sometimes, when normalization does not work, standardization might do the work.
+
+#### Log transformation
+In the case of positive skewness, log transformations usually work well.
 
 ### Data splitting:
 
