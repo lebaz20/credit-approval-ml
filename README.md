@@ -50,13 +50,13 @@ The missing values from particular attributes are:
      -: 383 (55.5%)
 ````
 
-We are going to use supervised learning models, Baseline logistic regression and GridSearchCV logistic regression and and figure out their impacts on accuracy.
+We are going to use supervised learning models, mainly logistic regression with KFold and GridSearch cross-validation and figure out their impacts on accuracy.
 
 
 ## 4. The steps expected are as follows:
 
     1. Load data and inspect the structure and the data types of the data set.
-    2- Clean the data.
+    2. Clean the data.
     3. Handle missing data.
     4. Preprocess the data.
     5. Basic data visulaization.
