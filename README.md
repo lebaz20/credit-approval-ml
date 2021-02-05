@@ -4,7 +4,7 @@ Machine Learning using [Credit Approval Data Set](https://archive.ics.uci.edu/ml
 This file concerns credit card applications. All attribute names and values have been changed to meaningless symbols to protect the confidentiality of the data.
 This will still suit our purposes as a demonstration dataset since we are not using the data to develop actual credit screening criteria. 
 
-This dataset is interesting because there is a good mix of attributes -- continuous, nominal with small numbers of values, and nominal with larger numbers of values. There are also a few missing values.
+This dataset is interesting because there is a good mix of attributes -- continuous, ordinal, nominal with small numbers of values, and nominal with larger numbers of values. There are also a few missing values.
 
 ## 1.  Attribute Information:
 
