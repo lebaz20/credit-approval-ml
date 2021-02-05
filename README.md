@@ -50,7 +50,7 @@ The missing values from particular attributes are:
      -: 383 (55.5%)
 ````
 
-We are going to use supervised learning models, mainly logistic regression with KFold and GridSearch cross-validation and figure out their impacts on accuracy.
+We are going to use supervised learning models, mainly logistic regression and decision tree classifier models with KFold and GridSearch cross-validation and figure out their impacts on accuracy.
 
 
 ## 4. The steps expected are as follows:
