@@ -68,8 +68,8 @@ We are going to use supervised learning models, mainly logistic regression and d
 
     1. Remove rows with missing data.
     2. Fill continuous data with columns' mean/median values and categorical data with columns' most frequent category.
-    3. Fill based on predictive models between mostly correlated columns.
-    4. Fill using unsupervised learning.
+    3. Fill based on predictive models with limited correlation.
+    4. Fill based on predictive models with full correlation.
     5. Fill using deep learning.
     6. Use Algorithms that support missing values.
 
@@ -90,7 +90,7 @@ We are going to use supervised learning models, mainly logistic regression and d
   * Can cause data leakage.
   * Does not factor the covariance between features (for continuous ones).
 
-#### 3. Fill based on predictive models between mostly correlated columns.
+#### 3. Fill based on predictive models with limited correlation.
 Using linear regression for continuous data and association rules by Apriori for categorical data.
 
 * Pros:
@@ -99,7 +99,7 @@ Using linear regression for continuous data and association rules by Apriori for
 * Cons:
   * Considered only as a proxy for the true values.
 
-#### 4. Fill using unsupervised learning.
+#### 4. Fill based on predictive models with full correlation.
 Using k-nearest neighbors imputer.
 
 * Pros:
